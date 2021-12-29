@@ -1,0 +1,12 @@
+.hidden {
+    display: none;
+}
+
+.tools {
+    display: flex;
+    flex-direction: row;
+}
+
+canvas {
+    background: #000;
+}

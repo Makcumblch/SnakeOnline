@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Многопользовательская змейка</title>
+  <link rel="stylesheet" type="text/css" href="style.css" /> 
+</head>
+<body>
+  <div id="menu">
+    <p>Ширина сетки:</p>
+    <input id="gridWidth" type="number" value="50" min="10" step="1">
+    <p>Высота сетки:</p>
+    <input id="gridHeigth" type="number" value="30" min="10" step="1">
+    <p>Начальная длина змейки:</p>
+    <input id="snakeLength" type="number" value="5" min="2" step="1">
+    <p>Скорость игры:</p>
+    <input id="speedGame" type="number" value="10" min="1" step="1">
+    <p>Никнейм:</p>
+    <input id="nickname" type="text">
+    <p></p>
+    <input id="createRoom" type="button" value="Создать комнату">
+    <input id="roomNameInput" type="text">
+    <input id="enterRoom" type="button" value="Подключиться к комнате">
+  </div>
+  <div id="game" class="hidden">
+    <div class="tools">
+      <div>
+        <canvas id="canvas" width="1072" height="720"></canvas>
+      </div>
+      <div style="padding-left: 10px;">
+        <p id="codeRoom"></p>
+        <input id="disconnect" type="button" value="Выйти">
+        <p><strong>Лидеры:</strong></p>
+        <ol id="leaders"></ol>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
